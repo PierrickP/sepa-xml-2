@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "istanbul cover _mocha",
+    "test-ci": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "doc": "jsdoc -c jsdoc.json",
     "gh-pages": "git subtree push --prefix doc https://github.com/PierrickP/sepa-xml-2 gh-pages"
   },
@@ -23,10 +24,12 @@
     "name": "Pierrick Paul",
     "email": "mulotmail@gmail.com"
   },
-  "contributors": [{
-    "name": "Mike Timofiiv",
-    "web": "http://fiiv.io"
-  }],
+  "contributors": [
+    {
+      "name": "Mike Timofiiv",
+      "web": "http://fiiv.io"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/PierrickP/sepa-xml-2/issues"
@@ -37,10 +40,12 @@
   },
   "devDependencies": {
     "chai": "^3.2.0",
+    "coveralls": "^2.11.8",
     "istanbul": "^0.4.2",
     "jaguarjs-jsdoc": "0.0.1",
     "jsdoc": "^3.4.0",
     "mocha": "^2.2.5",
+    "mocha-lcov-reporter": "^1.2.0",
     "xml2js": "^0.4.16"
   }
 }
