@@ -1,15 +1,16 @@
 {
-  "name": "sepa-xml",
-  "version": "0.0.5",
+  "name": "sepa-xml-2",
+  "version": "2.0.0",
   "description": "A simple XML generator for SEPA transactions.",
   "main": "index.js",
   "scripts": {
     "test": "istanbul cover _mocha",
-    "package:update": "npm outdated --depth=0 | grep -v Package | awk '{print $1}' | xargs -I% npm install %@latest --save"
+    "doc": "jsdoc -c jsdoc.json",
+    "gh-pages": "git subtree push --prefix doc origin gh-pages"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mgmco/sepa-xml.git"
+    "url": "git+ssh://git@github.com/PierrickP/sepa-xml-2.git"
   },
   "keywords": [
     "sepa",
@@ -18,18 +19,27 @@
     "payment",
     "xml"
   ],
-  "author": "Mike Timofiiv (http://fiiv.io)",
+  "author": {
+    "name": "Pierrick Paul",
+    "email": "mulotmail@gmail.com"
+  },
+  "contributors": [{
+    "name": "Mike Timofiiv",
+    "web": "http://fiiv.io"
+  }],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mgmco/sepa-xml/issues"
+    "url": "https://github.com/PierrickP/sepa-xml-2/issues"
   },
-  "homepage": "https://github.com/mgmco/sepa-xml#readme",
+  "homepage": "https://github.com/PierrickP/sepa-xml-2",
   "dependencies": {
     "handlebars": "^4.0.5"
   },
   "devDependencies": {
     "chai": "^3.2.0",
     "istanbul": "^0.4.2",
+    "jaguarjs-jsdoc": "0.0.1",
+    "jsdoc": "^3.4.0",
     "mocha": "^2.2.5",
     "xml2js": "^0.4.16"
   }
