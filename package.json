@@ -6,7 +6,7 @@
   "scripts": {
     "test": "istanbul cover _mocha",
     "doc": "jsdoc -c jsdoc.json",
-    "gh-pages": "git subtree push --prefix doc origin gh-pages"
+    "gh-pages": "git subtree push --prefix doc https://github.com/PierrickP/sepa-xml-2 gh-pages"
   },
   "repository": {
     "type": "git",

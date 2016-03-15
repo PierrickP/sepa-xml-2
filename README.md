@@ -1,5 +1,8 @@
 # SEPA-XML-2
 
+[![Build Status](https://travis-ci.org/PierrickP/sepa-xml-2.svg?branch=master)](https://travis-ci.org/PierrickP/sepa-xml-2)
+[![Coverage Status](https://coveralls.io/repos/github/PierrickP/sepa-xml-2/badge.svg?branch=master)](https://coveralls.io/github/PierrickP/sepa-xml-2?branch=master)
+
 Based on https://github.com/mgmco/sepa-xml this NPM module generate SEPA XML file for **credit** (ask me for *debit*)
 
 ## Changes from the original module 
